@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — Мой сайт</title>
+    <meta name="description" content="Свяжитесь с нами — адрес, телефон, email и форма обратной связи">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header, footer {
+            background-color: #444;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        form {
+            margin-top: 20px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Мой сайт</h1>
+        <nav>
+            <a href="index.html">Главная</a> |
+            <a href="about.html">О нас</a> |
+            <a href="contacts.html">Контакты</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Хлебные крошки -->
+        <nav aria-label="Хлебные крошки">
+            <a href="index.html">Главная</a> → 
+            <span aria-current="page">Контакты</span>
+        </nav>
+
+        <h1>Наши контакты</h1>
+
+        <section>
+            <h2>Как нас найти</h2>
+            <p><strong>Адрес:</strong> г. Москва, ул. Примерная, д. 123</p>
+            <p><strong>Телефон:</strong> +7 (495) 123-45-67</p>
+            <p><strong>Email:</strong> <a href="mailto:info@example.com">info@example.com</a></p>
+        </section>
+
+        <section>
+            <h2>Часы работы</h2>
+            <p>Понедельник – Пятница: 9:00 – 18:00</p>
+            <p>Суббота – Воскресенье: выходной</p>
+        </section>
+
+        <section>
+            <h2>Напишите нам</h2>
+            <form action="#" method="post">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <input type="submit" value="Отправить">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Мой сайт. Все права защищены.</p>
+    </footer>
+</body>
+</html>
